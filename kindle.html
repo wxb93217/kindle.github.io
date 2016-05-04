@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+	<title>在线外教一对一 | 阿卡索外教网</title>
+	<link rel="stylesheet" href="http://img.acadsoc.com.cn/css/bootstrap.min.css">
+	<script src="http://img.acadsoc.com.cn/js/vendor/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src='/ajax/Web.UI.Fun.IpRecord.aspx'></script>
+    <script src="http://img.acadsoc.com.cn/js/IdentificationSystem.js"></script>
+    <!--[if lt IE 9]>
+      <script src="/js/vendor/html5shiv.js"></script>
+      <script src="/js/vendor/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    	.cont{position: relative;background-color:#fff;}
+    	li{list-style-type: none;}
+    	a,button{cursor:pointer;text-decoration:none;}
+		/*input 去掉ie10以上版本的X*/
+		::-ms-clear, ::-ms-reveal{display:none;}
+		/*input 去掉chrome选中input时的外边框*/
+		input{outline:none;border:0;}
+		.kb1{position: relative;background:url("img/kb1.jpg") center top no-repeat;height: 750px;}
+		.kb2{position:relative;background-color: #f6f6f6;width: 100%;padding: 50px 0 0;color: #000;}
+		.kb3{position: relative;background: url("img/kb3.jpg") center top no-repeat;height: 870px;}
+		.kb4{background-color: #ededed;padding: 50px 0;color: #000;}
+		.goods1{position: absolute;left: -80px;top: 100px;-webkit-animation: fadeInUp ease 2.5s both infinite;animation: fadeInUp ease 2.5s both infinite;animation-iteration-count: 1;-webkit-animation-iteration-count: 1;}
+		.kb1-text{margin-top: 130px;color: #000;font-size: 18px;}
+		.kb1-text h3{font-weight: bold;font-size: 30px;}
+		.goods-text li{margin: 53px 0;}
+		.goods2{opacity: 0;opacity: 1\9\0;/* ie9 */}
+		.goods2.start{-webkit-animation: fadeInRight ease 2.5s both infinite;animation: fadeInRight ease 2.5s both infinite;animation-iteration-count: 1;-webkit-animation-iteration-count: 1;}
+		.kb3-text{margin-top: 270px;color: #000;}
+		.kb3-text p{margin: 10px 0;font-size: 22px;}
+		.get-btn{margin-top: 60px;}
+		.kb4 img{margin: 10px 0;}
+		.kb4 small{color: #636363;}
+		.laybg {width: 100%;height: 100%;position: absolute;top: 0;left: 0;background-color: #000;filter: alpha(opacity = 80);-moz-opacity: 0.8;opacity: 0.8;z-index: 40;display: none;}
+		.win1{}
+		.dialog {text-align: center;margin: 0 auto;position: fixed;z-index: 50;display: none;}
+		.win-con{background:url("img/win-bg.png") top center repeat;padding: 50px 20px;width: 700px;height: 500px;}
+		.win-con h3{font-size: 30px;font-weight: bolder;color: #000;margin-bottom: 30px;}
+		.win-con p{color: #2c2a2a;margin-bottom: 0;}
+		.win-con span{font-size: 24px;color: #e53310;}
+		.win-img{float: right;margin-right: -140px;margin-top: 60px;}
+		.close-win{position: fixed;right: 260px;top: 0;z-index: 99;}
+		input[type=text].win-input{border: 1px solid #e53310;padding: 10px 20px;width: 280px;}
+		/*top*/
+		header.top{max-width:1000px;margin:auto;height:87px; background:#fff;}
+        .lp-logo{width:241px;height:76px; background:url("http://img.acadsoc.com.cn/img/lp_b/lp_logo.jpg") no-repeat; float:left;}
+        .top_t{margin:30px 0 0 15px; font-size:14px; display:block; float:left;}
+        .Tel{float:right; font-size:35px;width:231px;height:41px;margin-top:18px; background:url("http://img.acadsoc.com.cn/img/lp_b/tel.jpg") no-repeat;}
+        #zxjxj:hover{background:#40d0a6}
+		@-webkit-keyframes fadeInUp{0%{-webkit-transform:translateY(740px);opacity:0}100%{-webkit-transform:translateY(0%);opacity:1}}@keyframes fadeInUp{0%{transform:translateY(740px);opacity:0}100%{transform:translateY(0%);opacity:1}}@-webkit-keyframes fadeInRight{0%{-webkit-transform:translateX(-150px);opacity:0}100%{-webkit-transform:translateX(0%);opacity:1}}@keyframes fadeInRight{0%{transform:translateX(-150px);opacity:0}100%{transform:translateX(0%);opacity:1}}@-webkit-keyframes fadeInDown{0%{-webkit-transform:translateY(-540px);opacity:0}100%{-webkit-transform:translateY(0%);opacity:1}}@keyframes fadeInDown{0%{transform:translateY(-540px);opacity:0}100%{transform:translateY(0%);opacity:1}}@-webkit-keyframes fadeIntoa{0%{opacity:0}60%{opacity:0}100%{opacity:1}}@keyframes fadeIntoa{0%{opacity:0}60%{opacity:0}100%{opacity:1}}@-webkit-keyframes fadeIntob{0%{opacity:0}70%{opacity:0}100%{opacity:1}}@keyframes fadeIntob{0%{opacity:0}70%{opacity:0}100%{opacity:1}}@-webkit-keyframes fadeIntoc{0%{opacity:0}80%{opacity:0}100%{opacity:1}}@keyframes fadeIntoc{0%{opacity:0}80%{opacity:0}100%{opacity:1}}@-webkit-keyframes fadeIntod{0%{opacity:0}90%{opacity:0}100%{opacity:1}}@keyframes fadeIntod{0%{opacity:0}90%{opacity:0}100%{opacity:1}}
+		@media (max-width: 768px){
+			.close-win{right: 10px;top: -181px;}
+			.mb-none{display: none;}
+		}
+		@media (max-width: 704px){
+			.Tel{display: none;}
+         }
+		@media (max-width: 414px){
+		    .lp-logo{float:none;margin:0 auto;}
+			.mb-none,.top_t{display: none;}
+			.win-con h3,.win-con span{font-size: 20px;}
+			.win-con{width: 100%;height:auto;max-height: 100%;padding: 10px 20px;}
+			img{max-width: 100%;}
+		}
+    </style>
+    <script>
+        // 居中 
+        function center(obj) {
+            var screenWidth = $(window).width(), screenHeight = $(window).height(); // 当前浏览器窗口的
+            // 宽高
+            var scrolltop = $(document).scrollTop(); // 获取当前窗口距离页面顶部高度
+            var objLeft = (screenWidth - obj.width()) / 2;
+            var objTop = "";
+            if (screenHeight >= obj.height()) {
+                objTop = (screenHeight - obj.height()) * 0.4;
+            } else {
+                objTop = scrolltop;
+            }
+            obj.css({
+                left: objLeft + 'px',
+                top: objTop + 'px'
+            });
+            obj.fadeIn(400);
+        }
+        var scrollEventTimer = null;
+        //浏览器有滚动条时的操作、
+        $(window).scroll(function () {
+            if (scrollEventTimer) {
+                clearTimeout(scrollEventTimer);
+            }
+            scrollEventTimer = setTimeout(function () {
+                scrolltop = $(document).scrollTop();
+                if (scrolltop > 250) {
+                    $('.goods2').addClass('start');
+                }
+            }, 100);
+        });
+        $(function () {
+            $("#go1").click(function () {
+                $(".laybg").show();
+                $(".win1").show();
+                center($(".win1"));
+            });
+            $(".close-win").click(function () {
+                $(".laybg").hide();
+                $(".dialog").hide();
+            });
+            $("#go2").click(function () {
+                $(".win1").hide();
+                $(".win2").show();
+                center($(".win2"));
+            });
+            $("#go3").click(function () {
+                $(".win2").hide();
+                $(".win3").show();
+                center($(".win3"));
+            });
+        });
+    </script>
+</head>
+<body>
+	<div class="cont">
+        <header id="top01" class="top">
+            <div class="lp-logo"><a href="/" target="_blank" style="width:240px;height:75px; display:block;"></a></div>
+            <span class="top_t">省时 · 省钱 · 专业 · 贴心 · 有保障</span>
+            <div class="Tel"></div>
+        </header>
+		<div class="kb1">
+			<div class="container" style="position: relative;">
+				<div class="mb-none"><img class="goods1" src="img/shouji.png" alt=""></div>
+				<div class="kb1-text text-center">
+					<img src="img/2weima.png" alt="">
+					<h3>码上有Kindle&nbsp;&nbsp;电子阅读器</h3>
+					<p>活动时间：4月1日—— 4月20日</p>
+				</div>
+			</div>
+		</div>
+		<div class="kb2">
+			<div class="container">
+				<div class="col-md-6">
+					<ul class="goods-text">
+						<li>
+							<h3>高清触屏，柔和护眼</h3>
+							<p>高对比度全触摸屏幕，字体大小可以随意调节。媲美纸书，舒适护目。</p>
+						</li>
+						<li>
+							<h3>内置词典，学习伙伴</h3>
+							<p>内置词典，生词本等工具，是您英语学习好帮手。</p>
+						</li>
+						<li>
+							<h3>英文原著，轻松获得</h3>
+							<p>海量精选英文原著及教材，轻松下载，转瞬即得。</p>
+						</li>
+						<li>
+							<h3>超长续航，持久陪伴</h3>
+							<p>一次充电可维持数周，而不是数天。</p>
+						</li>
+						<li>
+							<h3>单手阅读，轻便舒适</h3>
+							<p>机身轻便，可单手持握，舒适阅读，4GB存储能容纳数千本图书。</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<img src="img/kindle.png" alt="" class="goods2" style="max-width:100%;">
+				</div>
+			</div>
+		</div>
+		<div class="kb3">
+			<div class="container">
+				<div class="kb3-text col-md-6 col-md-offset-2">
+					<img src="img/txt-tit.png" alt="" style="margin-bottom:30px;">
+					<p>内置词典，生词随时查，自动添加到【生词本】</p>
+					<p>更有丰富的英语资源可供下载，在语境中不仅记得清楚</p>
+					<p>更学会了地道地使用新词</p>
+					<div class="get-btn"><a href="javascript:void(0);" id="go1"><img src="img/get-btn.png" alt=""></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="kb4">
+			<div class="container">
+				<div class="col-md-8">
+					<h2>活动规则</h2>
+					<ul>
+						<li><p>一、活动时间 :2016年4月1日-4月20日</p></li>
+						<li>
+							<span>二、参与对象</span>
+							<p>本活动仅限于首次下载阿卡索口语秀APP用户有效</p>
+						</li>
+						<li>
+							<span>三、活动参与条件</span>
+							<p>通过手机扫描右侧二维码下载阿卡索口语秀APP，输入登录阿卡索外教网账号即可免费申领价值958元最新款亚马逊7代Kindle 电子阅读器，总共送出100台。推荐更多的朋友下载阿卡索口语秀APP，中奖的几率将会越大。本活动为抽奖活动，系统将从成功申领的用户中抽出中奖用户，4月20日在阿卡索口语秀APP公布中奖名单。</p>
+						</li>
+						<li>
+							<span>四、奖品说明</span>
+							<p>奖品为亚马逊7代Kindle 电子阅读器（价值958元），总共100台，奖品以收到实物为准。 温馨提示：本活动如出现任何违规行为，则会取消奖励。</p>
+						</li>
+						<li>
+							<small>本次活动解释权归阿卡索外教网所有</small>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-md-offset-1">
+					<div class="col-md-12 text-center">
+						<img src="img/2weima.png" alt="">
+						<a href="http://zhushou.360.cn/detail/index/soft_id/2327563"><img src="img/apk.png" alt=""></a>
+						<a href="https://appsto.re/cn/qaf8_.i"><img src="img/ios.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--bg层-->
+		<div class="laybg"></div>
+        <div id="footer" style="padding-top:10px;"><!-- 100% -->
+        <div class="container">   
+                <div class="col-md-12 text-center">
+                    <div class="logo" style="margin-top:10px;"><img alt="Acadsoc.com.cn" src="http://img.acadsoc.com.cn/img/acadsoc.png"></div>
+                    <div><strong>邮箱：</strong><a href="mailto:info@acadsoc.com">info@acadsoc.com</a></div>
+                    <div><strong>客户服务热线：400-8232-520</strong></div>
+                    <div style="color:#1ABC9C;">省时 · 省钱 · 专业 · 贴心 · 有保障</div>
+                    <div><img src="http://img.acadsoc.com.cn/img/copyright.jpg" alt="Copyright" /></div>
+                </div>
+            </div>
+        </div>
+	</div>
+    <!--弹窗-->
+	<div class="dialog win1">
+		<a href="javascript:void(0);"><img class="close-win" src="img/close.png" alt=""></a>
+		<div class="win-con">
+			<div class="col-md-10 text-center">
+				<h3>码上有“Kindle电子阅读器”</h3>
+				<p>100台价值958元<span>Kindle电子阅读器</span></p>
+				<p>拿到手软！手慢无！</p>
+				<div style="margin-top:50px;">
+					<input class="win-input" type="text" placeholder="请输入阿卡索会员账号" value="请输入阿卡索会员账号" onfocus="if (value =='请输入阿卡索会员账号'){value =''}" onblur="if (value ==''){value='请输入阿卡索会员账号'}">
+				</div>
+				<div class="get-btn"><a href="javascript:void(0);" id="go2"><img src="img/get-btn.png" alt="" width="200px;"></a></div>
+			</div>
+			<div class="col-md-2 mb-none"><img src="img/kindle-s.png" class="win-img" alt=""></div>
+		</div>
+	</div>
+	<div class="dialog win2">
+		<a href="javascript:void(0);"><img class="close-win" src="img/close.png" alt=""></a>
+		<div class="win-con">
+			<div class="col-md-10 text-center">
+				<h3>您离奖品只有一步之遥</h3>
+				<div style="margin-bottom:20px;">
+					<img src="img/2weima.png" alt="">
+				</div>
+				<p>您只需使用微信扫描二维码，下载阿卡索口语秀</p>
+				<p>并用阿卡索会员账号登录  即可<span>免费领Kindle</span></p>
+				<div class="text-danger ts_a" style=" color:#ff2a00;" ID="LitErrorMsg"></div>
+				<div class="get-btn" style="margin-top:20px;"><a href="javascript:void(0);" id="go3"><img src="img/get-btn.png" alt="" width="200px;"></a></div>
+			</div>
+			<div class="col-md-2 mb-none"><img src="img/kindle-s.png" class="win-img" alt=""></div>
+		</div>
+	</div>
+	<div class="dialog win3">
+		<a href="javascript:void(0);"><img class="close-win" src="img/close.png" alt=""></a>
+		<div class="win-con">
+			<div class="col-md-10 text-center">
+				<h3><img src="img/ico-1.png" alt="" style="margin-right:10px;">您的申请已提交！</h3>
+				<p style="color:#71a7dc;margin:100px 0 20px;">分享给朋友</p>
+				<!-- JiaThis Button BEGIN -->
+				<div class="jiathis_style_32x32 clearfix" style="margin: 0 auto;width: 252px;">
+					<a class="jiathis_button_weixin"></a>
+					<a class="jiathis_button_cqq"></a>
+					<a class="jiathis_button_qzone"></a>
+					<a class="jiathis_button_tqq"></a>
+					<a class="jiathis_button_tsina"></a>
+					<a class="jiathis_button_renren"></a>
+					<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+				</div>
+				<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+				<!-- JiaThis Button END -->
+				<p>温馨提示：推荐朋友使用阿卡索口语秀APP，中奖几率越大！</p>
+				<h4 style="margin-top:75px;font-size:24px;font-weight:bold;color:#000;">4月10日公布<span>中奖名单</span></h4>
+				<p style="color:#636363;">本次活动解释权归阿卡索外教网所有</p>
+			</div>
+			<div class="col-md-2 mb-none"><img src="img/kindle-s.png" class="win-img" alt=""></div>
+		</div>
+	</div>
+</body>
+</html>
